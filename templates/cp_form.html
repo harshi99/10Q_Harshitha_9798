@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CP Form</title>
+</head>
+<body>
+    <h2>CP Form</h2>
+    <form method="POST" action="/cp">
+        <input type="hidden" name="L1" value="{{ L1 }}">
+        <input type="hidden" name="L2" value="{{ L2 }}">
+        <input type="hidden" name="IV" value="{{ IV }}">
+        
+        <label for="password">Password:</label>
+        <input type="password" name="password" required><br><br>
+        
+        <input type="submit" value="Check Password">
+    </form>
+</body>
+</html>
